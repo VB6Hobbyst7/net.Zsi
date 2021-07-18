@@ -1,0 +1,61 @@
+﻿http://zsi-websrv:81
+administrator
+
+Data Source=srv2k8;Initial Catalog=ZSI;Persist Security Info=True;User ID=sa;Password=sash17ne
+
+SMTPServerName=172.18.51.1
+SMTPAUTHPassword=ZSI-MSDS
+SMTPAUTHUser=msds.zsi@zschimmer-schwarz.com
+SMTPAUTHUserEmail=msds.zsi@zschimmer-schwarz.com
+SMTPPort=25
+SMTPUseSSL=0
+SMTPAlwaysSendAs=
+
+W:\PDF\Zschimmer & Schwarz Italiana S.p.a\RevisionLast
+
+
+
+
+
+http://zsi-websrv:81
+administrator
+
+Data Source=srv2k8;Initial Catalog=ZSI;Persist Security Info=True;User ID=sa;Password=sash17ne
+
+SMTPServerName=172.18.51.1
+SMTPAUTHPassword=ZSI-MSDS
+SMTPAUTHUser=coa.zsi@zschimmer-schwarz.com
+SMTPAUTHUserEmail=coa.zsi@zschimmer-schwarz.com
+SMTPPort=25
+SMTPUseSSL=0
+SMTPAlwaysSendAs=
+
+W:\PDF\Zschimmer & Schwarz Italiana S.p.a\RevisionLast
+
+
+
+
+
+
+
+
+
+
+
+
+http://vsrv2k8bsn2:8780
+administrator
+
+Data Source=vsrv2k8bsn2;Initial Catalog=ZSI;Persist Security Info=True;User ID=sa;Password=sash17ne
+
+
+SMTPServerName=smtp.gmail.com
+SMTPAUTHPassword=KnosMailService2015
+SMTPAUTHUser=knosmail@gmail.com
+SMTPAUTHUserEmail=knosmail@gmail.com
+SMTPPort=465
+SMTPUseSSL=1
+SMTPAlwaysSendAs=
+
+C:\_SVILUPPO\ZSI\GestioneLaboratorio\BSC\PDF\Zschimmer & Schwarz Italiana S.p.a
+

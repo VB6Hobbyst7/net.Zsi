@@ -1,0 +1,519 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ToDoNotificheBSC.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MetodoCommand" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM ZS_VISTA_NOTIFICHEBSC</Value>
+    </Setting>
+    <Setting Name="CdoConfig" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;SMTPServerName=172.23.2.95&lt;/string&gt;
+  &lt;string&gt;SMTPAUTHPassword=ZSI-MSDS&lt;/string&gt;
+  &lt;string&gt;SMTPAUTHUser=msds.zsi@zschimmer-schwarz.com&lt;/string&gt;
+  &lt;string&gt;SMTPAUTHUserEmail=msds.zsi@zschimmer-schwarz.com&lt;/string&gt;
+  &lt;string&gt;SMTPPort=25&lt;/string&gt;
+  &lt;string&gt;SMTPUseSSL=0&lt;/string&gt;
+  &lt;string&gt;SMTPAlwaysSendAs=&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="UseCdo" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="sendMailPopUp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">true</Value>
+    </Setting>
+    <Setting Name="sendMailSchede" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;html&gt;
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;p&gt;
+            &lt;br /&gt;
+            Gent.mo Cliente,&lt;br /&gt;
+            in allegato l'aggiornamento di:&lt;br /&gt;
+            &lt;b&gt;{0}&lt;/b&gt;&lt;br /&gt;
+            &lt;b&gt;{1}&lt;/b&gt;&lt;br /&gt;
+            {2}&lt;br /&gt;&lt;br /&gt;
+            Si prega di non rispondere a questo indirizzo email.&lt;br /&gt;
+            &lt;br /&gt;
+            Dear Customer,&lt;br /&gt;
+            please find the attached revised document:&lt;br /&gt;
+            &lt;b&gt;{0}&lt;/b&gt;&lt;br /&gt;
+            &lt;b&gt;{1}&lt;/b&gt;&lt;br /&gt;
+            {2}&lt;br /&gt;&lt;br /&gt;
+            Please do not reply to this email address.&lt;br /&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;hr /&gt;
+        &lt;p&gt;
+            &lt;span&gt;&lt;b&gt;ZSCHIMMER &amp; SCHWARZ ITALIANA S.p.A.&lt;/b&gt;&lt;/span&gt;
+        &lt;br /&gt;
+        Via A. Ariotto 1/C&lt;br /&gt;
+        I - 13038 Tricerro, Italia&lt;br /&gt;
+        &lt;br /&gt;
+        Tel: +39 0161 808111&lt;br /&gt;
+        Fax: +39 0161 807335&lt;br /&gt;
+        Ufficio Commerciale/Sales Office:&lt;br /&gt;
+        Fax: +39 0161 801002&lt;br /&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</Value>
+    </Setting>
+    <Setting Name="sendMailEmbeddedImagesPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EmailImages</Value>
+    </Setting>
+    <Setting Name="KnoS_IdObject" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="KnoS_User" Type="System.String" Scope="User">
+      <Value Profile="(Default)">administrator</Value>
+    </Setting>
+    <Setting Name="KnoS_PWD" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="sendMailBollettini" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;html&gt;
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;p&gt;
+            &lt;br /&gt;
+            Gent.mo Cliente,&lt;br /&gt;
+            in allegato l'aggiornamento di:&lt;br /&gt;
+            {0}&lt;br /&gt;
+            {1}&lt;br /&gt;
+            Si prega di non rispondere a questo indirizzo email.&lt;br /&gt;
+            &lt;hr /&gt;
+            Dear Customer,&lt;br /&gt;
+            please find the attached revised document:&lt;br /&gt;
+            {0}&lt;br /&gt;
+            {1}&lt;br /&gt;
+            Please do not reply to this email address.&lt;br /&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;hr /&gt;
+        &lt;p&gt;
+            &lt;span&gt;&lt;b&gt;ZSCHIMMER &amp; SCHWARZ&lt;/b&gt;&lt;/span&gt;&lt;br /&gt;
+        Italiana S.p.A.
+        &lt;br /&gt;
+        Via A. Ariotto 1/C&lt;br /&gt;
+        I - 13038 Tricerro, Italia&lt;br /&gt;
+        &lt;br /&gt;
+        Tel: +39 0161 808111&lt;br /&gt;
+        Fax: +39 0161 807335&lt;br /&gt;
+        Ufficio Commerciale:&lt;br /&gt;
+        Fax: +39 0161 801002
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</Value>
+    </Setting>
+    <Setting Name="PathPDF" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">W:\</Value>
+    </Setting>
+    <Setting Name="KnoS_URL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://ZSI-WEBSRV:81</Value>
+    </Setting>
+    <Setting Name="sendMailSchedeTecnicheSubject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Invio DOCUMENTAZIONE - Cliente/Customer: {0}</Value>
+    </Setting>
+    <Setting Name="sendMailBollettiniSubject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Invio BOLLETTINI - Cliente/Customer {0}</Value>
+    </Setting>
+    <Setting Name="sendMailBCC" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">knosmail@gmail.com;m.michieletti@zschimmer-schwarz.com;msds.zsi@zschimmer-schwarz.com;</Value>
+    </Setting>
+    <Setting Name="DataAggiornamento" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2015-05-01</Value>
+    </Setting>
+    <Setting Name="SqlUpdateBSC" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EXECUTE dbo.ITA_SP_UPDATE_REGISTRONOTIFICHEBSC </Value>
+    </Setting>
+    <Setting Name="KnoS_IdActionUpdateSchede" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">5018</Value>
+    </Setting>
+    <Setting Name="KnoS_IdActionUpdateSchedeRedazione" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">5016</Value>
+    </Setting>
+    <Setting Name="PathPDF_H" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">H:\LETTERATURE PRODOTTI FINITI\SCHEDE DI SICUREZZA</Value>
+    </Setting>
+    <Setting Name="sendMailBCCSimulazione" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">knosmail@gmail.com;m.michieletti@zschimmer-schwarz.com</Value>
+    </Setting>
+    <Setting Name="sendMailCOASubject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Invio COA - Cliente/Customer: {0}</Value>
+    </Setting>
+    <Setting Name="DataInvioSchede" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2015-01-01</Value>
+    </Setting>
+    <Setting Name="sendMailCOA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;html&gt;
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;p&gt;
+            &lt;br /&gt;
+            Gent.mo Cliente,&lt;br /&gt;
+            in allegato il certificato di analisi di:&lt;br /&gt;
+            {0}&lt;br /&gt;
+            Si prega di non rispondere a questo indirizzo email.&lt;br /&gt;
+            &lt;hr /&gt;
+            Dear Customer,&lt;br /&gt;
+            please find the attached revised document:&lt;br /&gt;
+            {0}&lt;br /&gt;
+            Please do not reply to this email address.&lt;br /&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;hr /&gt;
+        &lt;p&gt;
+            &lt;span&gt;&lt;b&gt;ZSCHIMMER &amp; SCHWARZ ITALIANA S.p.A.&lt;/b&gt;&lt;/span&gt;
+        &lt;br /&gt;
+        Via A. Ariotto 1/C&lt;br /&gt;
+        I - 13038 Tricerro, Italia&lt;br /&gt;
+        &lt;br /&gt;
+        Tel: +39 0161 808111&lt;br /&gt;
+        Fax: +39 0161 807335&lt;br /&gt;
+        Ufficio Commerciale/Sales Office:&lt;br /&gt;
+        Fax: +39 0161 801002&lt;br /&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</Value>
+    </Setting>
+    <Setting Name="MetodoCommandAllegati" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM ZS_VISTA_ALLEGATISCHEDESICUREZZA</Value>
+    </Setting>
+    <Setting Name="RicercaAutomaticaSchede" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="InvioAutomaticaSchede" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="UseVbs" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CdoConfigCOA" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;SMTPServerName=smtp.gmail.com&lt;/string&gt;
+  &lt;string&gt;SMTPAUTHPassword=KnosMailService2015&lt;/string&gt;
+  &lt;string&gt;SMTPAUTHUser=knosmail@gmail.com&lt;/string&gt;
+  &lt;string&gt;SMTPAUTHUserEmail=knosmail@gmail.com&lt;/string&gt;
+  &lt;string&gt;SMTPPort=465&lt;/string&gt;
+  &lt;string&gt;SMTPUseSSL=1&lt;/string&gt;
+  &lt;string&gt;SMTPAlwaysSendAs=&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="sendMailBCCCOA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">knosmail@gmail.com;m.michieletti@zschimmer-schwarz.com;coa.zsi@zschimmer-schwarz.com;</Value>
+    </Setting>
+    <Setting Name="sendMailBCCSimulazioneCOA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">knosmail@gmail.com;m.michieletti@zschimmer-schwarz.com;coa.zsi@zschimmer-schwarz.com;</Value>
+    </Setting>
+    <Setting Name="LotusConfig" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;SMTPServerName=smtp.gmail.com&lt;/string&gt;
+  &lt;string&gt;SMTPAUTHPassword=KnosMailService2015&lt;/string&gt;
+  &lt;string&gt;SMTPAUTHUser=knosmail@gmail.com&lt;/string&gt;
+  &lt;string&gt;SMTPAUTHUserEmail=knosmail@gmail.com&lt;/string&gt;
+  &lt;string&gt;SMTPPort=465&lt;/string&gt;
+  &lt;string&gt;SMTPUseSSL=1&lt;/string&gt;
+  &lt;string&gt;SMTPAlwaysSendAs=&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="sendMailBollettiniVbsLotus" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">"Gent.mo Cliente," &amp; vbcrlf &amp; "in allegato l'aggiornamento di:" &amp; vbcrlf &amp; "{0}" &amp; vbcrlf &amp; "{1}" &amp; vbcrlf &amp; "Si prega di non rispondere a questo indirizzo email." &amp; vbcrlf &amp; "Dear Customer," &amp; vbcrlf &amp; "please find the attached revised document:" &amp; vbcrlf &amp; "{0}" &amp; vbcrlf &amp; "{1}" &amp; vbcrlf &amp; "Please do not reply to this email address." &amp; vbcrlf &amp; "ZSCHIMMER &amp; SCHWARZ" &amp; vbcrlf &amp; "Italiana S.p.A." &amp; vbcrlf &amp; "Via A. Ariotto 1/C" &amp; vbcrlf &amp; "I - 13038 Tricerro, Italia" &amp; vbcrlf &amp; "Tel: +39 0161 808111" &amp; vbcrlf &amp; "Fax: +39 0161 807335" &amp; vbcrlf &amp; "Ufficio Commerciale:" &amp; vbcrlf &amp; "Fax: +39 0161 801002" </Value>
+    </Setting>
+    <Setting Name="sendMailCOAVbsLotus" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">"Gent.mo Cliente," &amp; vbcrlf &amp; "in allegato il certificato di analisi di:" &amp; vbcrlf &amp; "{0}" &amp; vbcrlf &amp; "Si prega di non rispondere a questo indirizzo email." &amp; vbcrlf &amp; "Dear Customer," &amp; vbcrlf &amp; "please find the attached revised document:" &amp; vbcrlf &amp; "{0}" &amp; vbcrlf &amp; "Please do not reply to this email address." &amp; vbcrlf &amp; "ZSCHIMMER &amp; SCHWARZ" &amp; vbcrlf &amp; "Italiana S.p.A." &amp; vbcrlf &amp; "Via A. Ariotto 1/C" &amp; vbcrlf &amp; "I - 13038 Tricerro, Italia" &amp; vbcrlf &amp; "Tel: +39 0161 808111" &amp; vbcrlf &amp; "Fax: +39 0161 807335" &amp; vbcrlf &amp; "Ufficio Commerciale:" &amp; vbcrlf &amp; "Fax: +39 0161 801002" </Value>
+    </Setting>
+    <Setting Name="sendMailMAG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;html&gt;
+&lt;body&gt;
+    &lt;div&gt;
+&lt;p&gt;notifica da parte del magazzino&lt;/p&gt;
+        &lt;p&gt;
+            {0}
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;hr /&gt;
+        &lt;p&gt;
+            &lt;span&gt;&lt;b&gt;ZSCHIMMER &amp; SCHWARZ ITALIANA S.p.A.&lt;/b&gt;&lt;/span&gt;
+        &lt;br /&gt;
+        Via A. Ariotto 1/C&lt;br /&gt;
+        I - 13038 Tricerro, Italia&lt;br /&gt;
+        &lt;br /&gt;
+        Tel: +39 0161 808111&lt;br /&gt;
+        Fax: +39 0161 807335&lt;br /&gt;
+        Ufficio Commerciale/Sales Office:&lt;br /&gt;
+        Fax: +39 0161 801002&lt;br /&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</Value>
+    </Setting>
+    <Setting Name="MAGTipiDocItalia" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">'OCC'</Value>
+    </Setting>
+    <Setting Name="MAGTipiImballiEsclusi" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">100, 101</Value>
+    </Setting>
+    <Setting Name="MAGMetodoCommand" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM EXCEL_PORTAFOGLIOORDINI</Value>
+    </Setting>
+    <Setting Name="sendMailMAGBackOffice" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;m.michieletti@zschimmer-schwarz.com&lt;/string&gt;
+  &lt;string&gt;e.presutto@zschimmer-schwarz.com&lt;/string&gt;
+  &lt;string&gt;m.pastore@zschimmer-schwarz.com&lt;/string&gt;
+  &lt;string&gt;g.ogliaro@zschimmer-schwarz.com&lt;/string&gt;
+  &lt;string&gt;i.sesia@zschimmer-schwarz.com&lt;/string&gt;
+  &lt;string&gt;m.finassi@zschimmer-schwarz.com&lt;/string&gt;
+  &lt;string&gt;m.costanzo@zschimmer-schwarz.com&lt;/string&gt;
+  &lt;string&gt;v.mussio@zschimmer-schwarz.coM&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="sendMailMAGProduzione" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">m.michieletti@zschimmer-schwarz.com</Value>
+    </Setting>
+    <Setting Name="sendMailMAGPosizionamento" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;m.finassi@zschimmer-schwarz.com&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="MAGModuloM12TrasportatoreColonne" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;XLS_DATACARICO&lt;/string&gt;
+  &lt;string&gt;ARTICOLO&lt;/string&gt;
+  &lt;string&gt;XLS_DESCRIZIONE&lt;/string&gt;
+  &lt;string&gt;XLS_QTA&lt;/string&gt;
+  &lt;string&gt;XLS_TIPOIMBALLO&lt;/string&gt;
+  &lt;string&gt;XLS_NUMONU&lt;/string&gt;
+  &lt;string&gt;XLS_CLASSEADR&lt;/string&gt;
+  &lt;string&gt;XLS_NRLOTTO&lt;/string&gt;
+  &lt;string&gt;XLS_DESTINAZIONE&lt;/string&gt;
+  &lt;string&gt;XLS_DATACONSEGNA&lt;/string&gt;
+  &lt;string&gt;XLS_NOTE&lt;/string&gt;
+  &lt;string&gt;XLS_COSTO&lt;/string&gt;
+  &lt;string&gt;XLS_SPEDIZIONIERE&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="MAGModuloM13TrasportatoreColonne" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;XLS_DATACARICO&lt;/string&gt;
+  &lt;string&gt;XLS_CLIENTE&lt;/string&gt;
+  &lt;string&gt;DESCRIZIONE&lt;/string&gt;
+  &lt;string&gt;XLS_QTA&lt;/string&gt;
+  &lt;string&gt;XLS_DESTINAZIONE&lt;/string&gt;
+  &lt;string&gt;XLS_NUMONU&lt;/string&gt;
+  &lt;string&gt;XLS_CLASSEADR&lt;/string&gt;
+  &lt;string&gt;XLS_NOTEMAG&lt;/string&gt;
+  &lt;string&gt;XLS_DATACONSEGNA&lt;/string&gt;
+  &lt;string&gt;XLS_NOTEART&lt;/string&gt;
+  &lt;string&gt;XLS_COSTO&lt;/string&gt;
+  &lt;string&gt;XLS_SPEDIZIONIERE&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="MAGModuloM14TrasportatoreColonne" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;XLS_DATACARICO&lt;/string&gt;
+  &lt;string&gt;NOTECONTAINER&lt;/string&gt;
+  &lt;string&gt;XLS_VUOTO&lt;/string&gt;
+  &lt;string&gt;RAGIONESOCIALE&lt;/string&gt;
+  &lt;string&gt;XLS_DESTINAZIONE&lt;/string&gt;
+  &lt;string&gt;XLS_CLASSEADR&lt;/string&gt;
+  &lt;string&gt;XLS_SHIPPER&lt;/string&gt;
+  &lt;string&gt;XLS_NOTECONSIGNEE&lt;/string&gt;
+  &lt;string&gt;XLS_NOTENOTIFY&lt;/string&gt;
+  &lt;string&gt;XLS_DOCUMENTI&lt;/string&gt;
+  &lt;string&gt;XLS_NOTE&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="MAGTipiImballo" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="MAGTStatoM05" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="MAGTipoOrdini" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="MAGTipiDocEstero" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">'OCE'</Value>
+    </Setting>
+    <Setting Name="CdoConfigM05" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;SMTPServerName=smtp.gmail.com&lt;/string&gt;
+  &lt;string&gt;SMTPAUTHPassword=KnosMailService2015&lt;/string&gt;
+  &lt;string&gt;SMTPAUTHUser=knosmail@gmail.com&lt;/string&gt;
+  &lt;string&gt;SMTPAUTHUserEmail=knosmail@gmail.com&lt;/string&gt;
+  &lt;string&gt;SMTPPort=465&lt;/string&gt;
+  &lt;string&gt;SMTPUseSSL=1&lt;/string&gt;
+  &lt;string&gt;SMTPAlwaysSendAs=&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="sendMailM05" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;html&gt;
+&lt;body style="font-family:Tahoma; font-size:10pt;"&gt;
+    &lt;div style="overflow-x:auto;"&gt;
+&lt;br&gt;
+        &lt;p&gt;
+            {0}
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</Value>
+    </Setting>
+    <Setting Name="MailSavedLocal" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="sendMailM05Subject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Invio mail M05</Value>
+    </Setting>
+    <Setting Name="MAGModuloM12ITATrasportatoreColonne" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;ARTICOLO&lt;/string&gt;
+  &lt;string&gt;DESCRIZIONE&lt;/string&gt;
+  &lt;string&gt;QTASPEDIBILE&lt;/string&gt;
+  &lt;string&gt;XLS_TIPOIMBALLO&lt;/string&gt;
+  &lt;string&gt;XLS_NUMONU&lt;/string&gt;
+  &lt;string&gt;XLS_CLASSEADR&lt;/string&gt;
+  &lt;string&gt;XLS_NRLOTTO&lt;/string&gt;
+  &lt;string&gt;XLS_DESTINAZIONE&lt;/string&gt;
+  &lt;string&gt;XLS_DATACONSEGNA&lt;/string&gt;
+  &lt;string&gt;XLS_NOTE&lt;/string&gt;
+  &lt;string&gt;XLS_SPEDIZIONIERE&lt;/string&gt;
+  &lt;string&gt;XLS_DATACARICO&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="UseLotus" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="MAGModuloM05Export" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;XLS_M05_ESTERO_CLIENTE&lt;/string&gt;
+  &lt;string&gt;XLS_M05_ESTERO_DOCUMENTO&lt;/string&gt;
+  &lt;string&gt;XLS_M05_ESTERO_ARTICOLO&lt;/string&gt;
+  &lt;string&gt;XLS_M05_ESTERO_DESCRIZIONE&lt;/string&gt;
+  &lt;string&gt;XLS_M05_ESTERO_QTAGEST&lt;/string&gt;
+  &lt;string&gt;XLS_M05_ESTERO_NRPEZZIIMBALLO&lt;/string&gt;
+  &lt;string&gt;XLS_M05_ESTERO_NRCOLLI&lt;/string&gt;
+  &lt;string&gt;XLS_M05_ESTERO_TIPOIMBALLO&lt;/string&gt;
+  &lt;string&gt;XLS_M05_ESTERO_NOTE&lt;/string&gt;
+  &lt;string&gt;XLS_M05_ESTERO_ETICHETTATURA&lt;/string&gt;
+  &lt;string&gt;XLS_M05_ESTERO_CONSEGNA&lt;/string&gt;
+  &lt;string&gt;XLS_M05_ESTERO_POSIZIONAMENTO&lt;/string&gt;
+  &lt;string&gt;XLS_M05_ESTERO_DISPONIBILITA&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="PathCOA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\srv2k8\dati\Certificati</Value>
+    </Setting>
+    <Setting Name="MNNDataNomeFile" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="RowHeaderImageList" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">16</Value>
+    </Setting>
+    <Setting Name="pathServerApp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">I:\Italcom\PrototipoMagazzino</Value>
+    </Setting>
+    <Setting Name="CurrentUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MAGModuloM15GRTrasportatoreColonne" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;XLS_M15_DATALUOGOCONSEGNA&lt;/string&gt;
+  &lt;string&gt;XLS_M15_QTASPEDIBILE&lt;/string&gt;
+  &lt;string&gt;XLS_M05_ESTERO_TIPOIMBALLO&lt;/string&gt;
+  &lt;string&gt;XLS_M15_NUMONU&lt;/string&gt;
+  &lt;string&gt;XLS_M15_CLASSEADR&lt;/string&gt;
+  &lt;string&gt;XLS_DESTINAZIONERAGSOC&lt;/string&gt;
+  &lt;string&gt;XLS_M15_RESA&lt;/string&gt;
+  &lt;string&gt;XLS_SHIPPER&lt;/string&gt;
+  &lt;string&gt;XLS_NOTECONSIGNEE&lt;/string&gt;
+  &lt;string&gt;XLS_NOTENOTIFY&lt;/string&gt;
+  &lt;string&gt;XLS_DOCUMENTI&lt;/string&gt;
+  &lt;string&gt;XLS_NOTE&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="MAGModuloM15TrasportatoreColonne" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;XLS_M15_DATALUOGOCONSEGNA&lt;/string&gt;
+  &lt;string&gt;XLS_M15_QTASPEDIBILE&lt;/string&gt;
+  &lt;string&gt;XLS_M05_ESTERO_TIPOIMBALLO&lt;/string&gt;
+  &lt;string&gt;XLS_M15_NUMONU&lt;/string&gt;
+  &lt;string&gt;XLS_M15_CLASSEADR&lt;/string&gt;
+  &lt;string&gt;XLS_DESTINAZIONERAGSOC&lt;/string&gt;
+  &lt;string&gt;XLS_M15_RESA&lt;/string&gt;
+  &lt;string&gt;XLS_SHIPPER&lt;/string&gt;
+  &lt;string&gt;XLS_NOTECONSIGNEE&lt;/string&gt;
+  &lt;string&gt;XLS_NOTENOTIFY&lt;/string&gt;
+  &lt;string&gt;XLS_DOCUMENTI&lt;/string&gt;
+  &lt;string&gt;XLS_NOTE&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="PathRMI" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;\\srv2k8\Dati\LETTERATURE PRODOTTI FINITI\RMI&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="KnoS_IdActionUpdateRMIRedazione" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">5019</Value>
+    </Setting>
+    <Setting Name="KnoS_IdActionUpdateRMI" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">5021</Value>
+    </Setting>
+    <Setting Name="DataAggiornamentoRMI" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2018-01-01</Value>
+    </Setting>
+    <Setting Name="SqlSchede" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM ZS_VISTA_FILEEPY_REVISIONLAST WHERE DATAMODIFICA &gt;= '{0}'</Value>
+    </Setting>
+    <Setting Name="MetodoConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=172.19.1.17;Initial Catalog=ZSI;Persist Security Info=True;User ID=knos;Password=zx1ctp21&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=172.19.1.17;Initial Catalog=ZSI;Persist Security Info=True;User ID=knos;Password=zx1ctp21</Value>
+    </Setting>
+    <Setting Name="MetodoConnectionStringUSER" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=172.19.1.17;Initial Catalog=ZSI;Persist Security Info=True;User ID={0};Password={1}</Value>
+    </Setting>
+    <Setting Name="MAGMetodoCommandM10" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM EXCEL_PORTAFOGLIOORDINI_M10</Value>
+    </Setting>
+    <Setting Name="listPathPDF" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;W:\&lt;/string&gt;
+  &lt;string&gt;C:\temp\&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="listPathPDF_H" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;H:\LETTERATURE PRODOTTI FINITI\SCHEDE DI SICUREZZA&lt;/string&gt;
+  &lt;string&gt;C:\Temp&lt;/string&gt;
+  &lt;string&gt;C:\_condivisa&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="SqlUpdateBSC_PA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EXECUTE dbo.ITA_SP_UPDATE_REGISTRONOTIFICHEBSC _PA</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

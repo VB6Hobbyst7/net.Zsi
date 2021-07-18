@@ -1,0 +1,117 @@
+﻿<RadGridView AutoSizeRows="True" BackColor="Transparent" ForeColor="ControlText" ReadOnly="True" Text="radGridViewCOA" Font="Segoe UI, 8.25pt" Cursor="Default" RightToLeft="No" TabIndex="23" ImeMode="NoControl">
+  <MasterTemplate MultiSelect="True" HorizontalScrollState="AlwaysShow" VerticalScrollState="AlwaysShow" EnableAlternatingRowColor="True" AllowAddNewRow="False" EnableFiltering="True" AutoExpandGroups="True" ShowTotals="True">
+    <SummaryRowsTop>
+      <Telerik.WinControls.UI.GridViewSummaryRowItem>
+        <Telerik.WinControls.UI.GridViewSummaryItem AggregateExpression="" Aggregate="Sum" Name="QTAGESTRES" FormatString="{0:0,0}" />
+        <Telerik.WinControls.UI.GridViewSummaryItem AggregateExpression="" Aggregate="Sum" Name="FUSTI" FormatString="{0:0,0}" />
+      </Telerik.WinControls.UI.GridViewSummaryRowItem>
+    </SummaryRowsTop>
+    <Columns>
+      <Telerik.WinControls.UI.GridViewImageColumn Width="39" Name="IMG" IsVisible="True" HeaderText="I" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="60" FieldName="DSCMAGSTATOM05" Name="DSCMAGSTATOM05" IsVisible="True" HeaderText="Stato M05" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="176" FieldName="RAGIONESOCIALE" Name="RAGIONESOCIALE" IsVisible="True" HeaderText="Cliente                                          ." WrapText="True">
+        <FilterDescriptor PropertyName="RAGIONESOCIALE" Value="MC" IsFilterEditor="True" />
+      </Telerik.WinControls.UI.GridViewTextBoxColumn>
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="176" FieldName="DOCUMENTO" Name="DOCUMENTO" EnableExpressionEditor="False" IsVisible="True" HeaderText="Ordine                 ." />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="58" FieldName="NUMRIFDOC" Name="NUMRIFDOC" IsVisible="True" HeaderText="Rif.Ordine" />
+      <Telerik.WinControls.UI.GridViewDateTimeColumn Format="Short" FormatString=" {0:dd/MM/yyyy} " Width="75" FieldName="DATADOC" Name="DATADOC" SortOrder="Descending" IsVisible="True" HeaderText="Data Doc." />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="93" FieldName="ARTICOLO" Name="ARTICOLO" IsVisible="True" HeaderText="Articolo              ." />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="105" FieldName="DESCRIZIONE" Name="DESCRIZIONE" IsVisible="True" HeaderText="Prodotto                ." WrapText="True" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn DataType="System.Int32" DecimalPlaces="0" Minimum="0" Width="64" FieldName="QTAGESTRES" Name="QTAGESTRES" IsVisible="True" ReadOnly="True" HeaderText="Qtà Ordine" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn DataType="System.Int32" Width="35" FieldName="NRPEZZIIMBALLO" Name="NRPEZZIIMBALLO" IsVisible="True" HeaderText="Kg/Lt" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn DataType="System.Int32" DecimalPlaces="0" Width="75" FieldName="COLLIDASPEDIRE" Name="COLLIDASPEDIRE" IsVisible="True" HeaderText="N° Fusti/Cubi" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Multiline="True" Width="88" FieldName="IMBALLO" Name="IMBALLO" IsVisible="True" HeaderText="Imballo             ." WrapText="True" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn DataType="System.Int32" DecimalPlaces="0" Width="78" FieldName="QTASPEDIBILE" Name="QTASPEDIBILE" IsVisible="True" ReadOnly="True" HeaderText="Q.tà Spedibile" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn DataType="System.Int32" Width="108" FieldName="COLLISPEDIBILI" Name="COLLISPEDIBILI" IsVisible="True" HeaderText="Nr. Fusti/Cubi Sped." />
+      <Telerik.WinControls.UI.GridViewDateTimeColumn Format="Short" FormatString=" {0:dd/MM/yyyy} " Width="66" FieldName="DATACARICO" Name="DATACARICO" IsVisible="True" HeaderText="Data Carico" />
+      <Telerik.WinControls.UI.GridViewDateTimeColumn FormatString=" {0:dd/MM/yyyy} " Width="132" FieldName="DATAPOSIZIONAMENTO" Name="DATAPOSIZIONAMENTO" SortOrder="Ascending" IsVisible="True" IsPinned="True" PinPosition="Left" HeaderText="Data Posizionamento" />
+      <Telerik.WinControls.UI.GridViewDateTimeColumn Format="Short" FormatString=" {0:dd/MM/yyyy} " Width="84" FieldName="DATACONSEGNA" Name="DATACONSEGNA" IsVisible="True" HeaderText="Data Consegna" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Multiline="True" Width="126" FieldName="NOTECLI" Name="NOTECLI" IsVisible="True" HeaderText="Note Cliente                 ." WrapText="True" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Multiline="True" Width="118" FieldName="NOTEART" Name="NOTEART" IsVisible="True" HeaderText="Note Articolo             ." WrapText="True" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Multiline="True" Width="91" FieldName="NOTEMAG" Name="NOTEMAG" IsVisible="True" HeaderText="Note Magazzino" WrapText="True" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn DataType="System.Int32" Width="71" FieldName="DISPONIBILITA" Name="DISPONIBILITA" IsVisible="True" HeaderText="Disponibilità" WrapText="True" />
+      <Telerik.WinControls.UI.GridViewCheckBoxColumn DataType="System.Int32" Width="29" FieldName="CLIENTESPECIALE" Name="CLIENTESPECIALE" IsVisible="True" HeaderText="S" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="88" FieldName="DSCMAGSTATORIGA" Name="DSCMAGSTATORIGA" IsVisible="True" HeaderText="Stato Evadibilità" WrapText="True" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="88" FieldName="POSIZIONAMENTO" Name="POSIZIONAMENTO" IsVisible="True" HeaderText="Posizionamento" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Multiline="True" Width="100" FieldName="DESTINAZIONE" Name="DESTINAZIONE" IsVisible="True" HeaderText="Destinazione        ." WrapText="True" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="57" FieldName="NOTECONTAINER" Name="NOTECONTAINER" IsVisible="True" HeaderText="Container" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="56" FieldName="MODULO" Name="MODULO" IsVisible="True" HeaderText="MOD. TR. " />
+      <Telerik.WinControls.UI.GridViewDecimalColumn DataType="System.Int32" Width="96" FieldName="gg_dataconsegna" Name="gg_dataconsegna" IsAutoGenerated="True" IsVisible="True" HeaderText="gg_dataconsegna" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="39" FieldName="RIFCLI" Name="RIFCLI" IsAutoGenerated="True" IsVisible="True" HeaderText="RIFCLI" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn DataType="System.Int32" Width="36" FieldName="FUSTI" Name="FUSTI" IsAutoGenerated="True" IsVisible="True" HeaderText="FUSTI" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="58" FieldName="NRLOTTO" Name="NRLOTTO" IsAutoGenerated="True" IsVisible="True" HeaderText="NRLOTTO" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="85" FieldName="SPEDIZIONIERE" Name="SPEDIZIONIERE" IsAutoGenerated="True" IsVisible="True" HeaderText="SPEDIZIONIERE" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="74" FieldName="MAGAZZINO" Name="MAGAZZINO" IsAutoGenerated="True" IsVisible="True" HeaderText="MAGAZZINO" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn DataType="System.Int16" Width="92" FieldName="CONFEZIONATO" Name="CONFEZIONATO" IsAutoGenerated="True" IsVisible="True" HeaderText="CONFEZIONATO" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="68" FieldName="TIPOPALLET" Name="TIPOPALLET" IsAutoGenerated="True" IsVisible="True" HeaderText="TIPOPALLET" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="91" FieldName="ETICHETTATURA" Name="ETICHETTATURA" IsAutoGenerated="True" IsVisible="True" HeaderText="ETICHETTATURA" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn Width="60" FieldName="ESERCIZIO" Name="ESERCIZIO" IsAutoGenerated="True" IsVisible="True" HeaderText="ESERCIZIO" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="55" FieldName="TIPODOC" Name="TIPODOC" IsAutoGenerated="True" IsVisible="True" HeaderText="TIPODOC" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn Width="79" FieldName="NUMERODOC" Name="NUMERODOC" IsAutoGenerated="True" IsVisible="True" HeaderText="NUMERODOC" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="24" FieldName="BIS" Name="BIS" IsAutoGenerated="True" IsVisible="True" HeaderText="BIS" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="86" FieldName="EMAIL_CLIENTE" Name="EMAIL_CLIENTE" IsAutoGenerated="True" IsVisible="True" HeaderText="EMAIL_CLIENTE" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn FieldName="IDTESTA" Name="IDTESTA" IsAutoGenerated="True" IsVisible="True" HeaderText="IDTESTA" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn DataType="System.Int32" Width="44" FieldName="IDRIGA" Name="IDRIGA" IsAutoGenerated="True" IsVisible="True" HeaderText="IDRIGA" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn Width="52" FieldName="GRUPPO" Name="GRUPPO" IsAutoGenerated="True" IsVisible="True" HeaderText="GRUPPO" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn Width="68" FieldName="CATEGORIA" Name="CATEGORIA" IsAutoGenerated="True" IsVisible="True" HeaderText="CATEGORIA" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn Width="116" FieldName="CODCATEGORIASTAT" Name="CODCATEGORIASTAT" IsAutoGenerated="True" IsVisible="True" HeaderText="CODCATEGORIASTAT" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="68" FieldName="CODCLIFOR" Name="CODCLIFOR" IsAutoGenerated="True" IsVisible="True" HeaderText="CODCLIFOR" />
+      <Telerik.WinControls.UI.GridViewDateTimeColumn Width="75" FieldName="DATARIFDOC" Name="DATARIFDOC" IsAutoGenerated="True" IsVisible="True" HeaderText="DATARIFDOC" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="78" FieldName="CODIMBALLO" Name="CODIMBALLO" IsAutoGenerated="True" IsVisible="True" HeaderText="CODIMBALLO" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn Width="58" FieldName="CODSPED" Name="CODSPED" IsAutoGenerated="True" IsVisible="True" HeaderText="CODSPED" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="52" FieldName="UMGEST" Name="UMGEST" IsAutoGenerated="True" IsVisible="True" HeaderText="UMGEST" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn DataType="System.Int16" Width="92" FieldName="MAGSTATORIGA" Name="MAGSTATORIGA" IsAutoGenerated="True" IsVisible="True" HeaderText="MAGSTATORIGA" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn DataType="System.Int16" Width="90" FieldName="MAGSTATOM05" Name="MAGSTATOM05" IsAutoGenerated="True" IsVisible="True" HeaderText="MAGSTATOM05" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn Width="137" FieldName="NUMDESTDIVERSAMERCI" Name="NUMDESTDIVERSAMERCI" IsAutoGenerated="True" IsVisible="True" HeaderText="NUMDESTDIVERSAMERCI" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="84" FieldName="ANNOTAZIONI" Name="ANNOTAZIONI" IsAutoGenerated="True" IsVisible="True" HeaderText="ANNOTAZIONI" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="59" FieldName="NUMONU" Name="NUMONU" IsAutoGenerated="True" IsVisible="True" HeaderText="NUMONU" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="68" FieldName="CLASSEADR" Name="CLASSEADR" IsAutoGenerated="True" IsVisible="True" HeaderText="CLASSEADR" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="99" FieldName="XLS_DATACARICO" Name="XLS_DATACARICO" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_DATACARICO" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="119" FieldName="XLS_DATACONSEGNA" Name="XLS_DATACONSEGNA" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_DATACONSEGNA" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="72" FieldName="XLS_CLIENTE" Name="XLS_CLIENTE" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_CLIENTE" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="108" FieldName="XLS_DESTINAZIONE" Name="XLS_DESTINAZIONE" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_DESTINAZIONE" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="101" FieldName="XLS_TIPOIMBALLO" Name="XLS_TIPOIMBALLO" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_TIPOIMBALLO" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="80" FieldName="XLS_NRLOTTO" Name="XLS_NRLOTTO" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_NRLOTTO" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="82" FieldName="XLS_NUMONU" Name="XLS_NUMONU" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_NUMONU" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="90" FieldName="XLS_CLASSEADR" Name="XLS_CLASSEADR" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_CLASSEADR" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="108" FieldName="XLS_SPEDIZIONIERE" Name="XLS_SPEDIZIONIERE" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_SPEDIZIONIERE" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="60" FieldName="XLS_NOTE" Name="XLS_NOTE" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_NOTE" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="80" FieldName="XLS_NOTEART" Name="XLS_NOTEART" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_NOTEART" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="85" FieldName="XLS_NOTEMAG" Name="XLS_NOTEMAG" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_NOTEMAG" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn DataType="System.Int32" Width="67" FieldName="XLS_COSTO" Name="XLS_COSTO" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_COSTO" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="120" FieldName="XLS_NOTECONSIGNEE" Name="XLS_NOTECONSIGNEE" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_NOTECONSIGNEE" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="97" FieldName="XLS_NOTENOTIFY" Name="XLS_NOTENOTIFY" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_NOTENOTIFY" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="53" FieldName="XLS_QTA" Name="XLS_QTA" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_QTA" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn DataType="System.Int64" Width="23" FieldName="RN" Name="RN" IsAutoGenerated="True" IsVisible="True" HeaderText="RN" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn Width="57" FieldName="IDOBJECT" Name="IDOBJECT" IsAutoGenerated="True" IsVisible="True" HeaderText="IDOBJECT" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="100" FieldName="XLS_DESCRIZIONE" Name="XLS_DESCRIZIONE" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_DESCRIZIONE" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="67" FieldName="XLS_PORTO" Name="XLS_PORTO" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_PORTO" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="73" FieldName="XLS_SHIPPER" Name="XLS_SHIPPER" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_SHIPPER" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="96" FieldName="XLS_DOCUMENTI" Name="XLS_DOCUMENTI" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_DOCUMENTI" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="69" FieldName="XLS_VUOTO" Name="XLS_VUOTO" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_VUOTO" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="143" FieldName="XLS_M05_ESTERO_CLIENTE" Name="XLS_M05_ESTERO_CLIENTE" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_M05_ESTERO_CLIENTE" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="172" FieldName="XLS_M05_ESTERO_DOCUMENTO" Name="XLS_M05_ESTERO_DOCUMENTO" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_M05_ESTERO_DOCUMENTO" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="154" FieldName="XLS_M05_ESTERO_ARTICOLO" Name="XLS_M05_ESTERO_ARTICOLO" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_M05_ESTERO_ARTICOLO" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="170" FieldName="XLS_M05_ESTERO_DESCRIZIONE" Name="XLS_M05_ESTERO_DESCRIZIONE" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_M05_ESTERO_DESCRIZIONE" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn DataType="System.Int32" Width="149" FieldName="XLS_M05_ESTERO_QTAGEST" Name="XLS_M05_ESTERO_QTAGEST" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_M05_ESTERO_QTAGEST" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn DataType="System.Int32" Width="146" FieldName="XLS_M05_ESTERO_NRCOLLI" Name="XLS_M05_ESTERO_NRCOLLI" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_M05_ESTERO_NRCOLLI" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn DataType="System.Int32" Width="191" FieldName="XLS_M05_ESTERO_NRPEZZIIMBALLO" Name="XLS_M05_ESTERO_NRPEZZIIMBALLO" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_M05_ESTERO_NRPEZZIIMBALLO" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="171" FieldName="XLS_M05_ESTERO_TIPOIMBALLO" Name="XLS_M05_ESTERO_TIPOIMBALLO" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_M05_ESTERO_TIPOIMBALLO" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="130" FieldName="XLS_M05_ESTERO_NOTE" Name="XLS_M05_ESTERO_NOTE" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_M05_ESTERO_NOTE" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="184" FieldName="XLS_M05_ESTERO_ETICHETTATURA" Name="XLS_M05_ESTERO_ETICHETTATURA" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_M05_ESTERO_ETICHETTATURA" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="161" FieldName="XLS_M05_ESTERO_CONSEGNA" Name="XLS_M05_ESTERO_CONSEGNA" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_M05_ESTERO_CONSEGNA" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="198" FieldName="XLS_M05_ESTERO_POSIZIONAMENTO" Name="XLS_M05_ESTERO_POSIZIONAMENTO" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_M05_ESTERO_POSIZIONAMENTO" />
+      <Telerik.WinControls.UI.GridViewDecimalColumn Width="176" FieldName="XLS_M05_ESTERO_DISPONIBILITA" Name="XLS_M05_ESTERO_DISPONIBILITA" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_M05_ESTERO_DISPONIBILITA" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="151" FieldName="XLS_DESTINAZIONERAGSOC" Name="XLS_DESTINAZIONERAGSOC" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_DESTINAZIONERAGSOC" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="156" FieldName="XLS_DATAPOSIZIONAMENTO" Name="XLS_DATAPOSIZIONAMENTO" IsAutoGenerated="True" IsVisible="True" HeaderText="XLS_DATAPOSIZIONAMENTO" />
+    </Columns>
+    <FilterDescriptors>
+      <Telerik.WinControls.Data.FilterDescriptor PropertyName="RAGIONESOCIALE" Value="MC" IsFilterEditor="True" />
+    </FilterDescriptors>
+    <SortDescriptors>
+      <Telerik.WinControls.Data.SortDescriptor PropertyName="DATAPOSIZIONAMENTO" />
+      <Telerik.WinControls.Data.SortDescriptor PropertyName="DATADOC" Direction="Descending" />
+    </SortDescriptors>
+    <ViewDefinition xsi:type="Telerik.WinControls.UI.TableViewDefinition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  </MasterTemplate>
+</RadGridView>

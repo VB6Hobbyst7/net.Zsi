@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6EE9EE70-3855-4763-BC74-2A2BCEBA2634}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SignRTFPDF</RootNamespace>
+    <AssemblyName>SignRTFPDF</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SignRTFPDF.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icona.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.4.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>extra\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra, Version=5.4.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>extra\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="KnosAPI">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\ITALCOM\KnosAPI\KnosAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="KnosCSSignLibrary">
+      <HintPath>..\..\..\..\..\..\..\_VM_Shared\KnosCS\KnosCSSignLibrary\bin\Debug\KnosCSSignLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Outlook, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmFirma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFirma.Designer.cs">
+      <DependentUpon>frmFirma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KnoS\KnosInstance.cs" />
+    <Compile Include="PDFUtils.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignFiles.cs" />
+    <Compile Include="UserSetting\Form_Prefs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSetting\Form_Prefs.Designer.cs">
+      <DependentUpon>Form_Prefs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserSetting\PropertyBag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserSetting\Settings.cs" />
+    <EmbeddedResource Include="frmFirma.resx">
+      <DependentUpon>frmFirma.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserSetting\Form_Prefs.resx">
+      <DependentUpon>Form_Prefs.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="nofile.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="test.knos-fr">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firmatecnico.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firmaresptecnico.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firmacapocommessa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firmaresptecnicoblank.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firmatecnicoblank.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firmacapocommessablank.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO-KNOS-TAGLIATO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO-KNOS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Debug_params.txt" />
+    <Content Include="icona.ico" />
+    <None Include="Resources\1381772609_info_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\..\_VM_Shared\ProgettiComuni\MapiMail\SendFileTo.csproj">
+      <Project>{8530e122-5864-4e83-be3c-7e2a50d0a040}</Project>
+      <Name>SendFileTo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

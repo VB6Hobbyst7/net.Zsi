@@ -1,0 +1,82 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ZSI_IMPORTLISTINI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MetodoConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\sqlexpress;Initial Catalog=ts_dms;Persist Security Info=True;User ID=sa;Password=sash17ne&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\sqlexpress;Initial Catalog=ts_dms;Persist Security Info=True;User ID=sa;Password=sash17ne</Value>
+    </Setting>
+    <Setting Name="SettingPathFileListino" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ColumnFields" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;MACROARTICOLO|A&lt;/string&gt;
+  &lt;string&gt;LISTINO|&lt;/string&gt;
+  &lt;string&gt;DEF_COL_A|&lt;/string&gt;
+  &lt;string&gt;VAL_COL_A|I&lt;/string&gt;
+  &lt;string&gt;DEF_COL_B|&lt;/string&gt;
+  &lt;string&gt;VAL_COL_B|J&lt;/string&gt;
+  &lt;string&gt;DEF_COL_C|&lt;/string&gt;
+  &lt;string&gt;VAL_COL_C|K&lt;/string&gt;
+  &lt;string&gt;DEF_COL_D|&lt;/string&gt;
+  &lt;string&gt;VAL_COL_D|L&lt;/string&gt;
+  &lt;string&gt;DEF_COL_E|&lt;/string&gt;
+  &lt;string&gt;VAL_COL_E|M&lt;/string&gt;
+  &lt;string&gt;DEF_COL_F|&lt;/string&gt;
+  &lt;string&gt;VAL_COL_F|N&lt;/string&gt;
+  &lt;string&gt;DEF_COL_G|&lt;/string&gt;
+  &lt;string&gt;VAL_COL_G|O&lt;/string&gt;
+  &lt;string&gt;DEF_COL_H|&lt;/string&gt;
+  &lt;string&gt;VAL_COL_H|P&lt;/string&gt;
+  &lt;string&gt;DEF_COL_I|&lt;/string&gt;
+  &lt;string&gt;VAL_COL_I|Q&lt;/string&gt;
+  &lt;string&gt;DEF_COL_L|&lt;/string&gt;
+  &lt;string&gt;VAL_COL_L|R&lt;/string&gt;
+  &lt;string&gt;DEF_COL_M|&lt;/string&gt;
+  &lt;string&gt;VAL_COL_M|S&lt;/string&gt;
+  &lt;string&gt;DEF_COL_N|&lt;/string&gt;
+  &lt;string&gt;VAL_COL_N|T&lt;/string&gt;
+  &lt;string&gt;DEF_COL_O|&lt;/string&gt;
+  &lt;string&gt;VAL_COL_O|U&lt;/string&gt;
+  &lt;string&gt;DEF_COL_P|&lt;/string&gt;
+  &lt;string&gt;VAL_COL_P|V&lt;/string&gt;
+  &lt;string&gt;DEF_COL_Q|&lt;/string&gt;
+  &lt;string&gt;VAL_COL_Q|W&lt;/string&gt;
+  &lt;string&gt;DEF_COL_R|&lt;/string&gt;
+  &lt;string&gt;VAL_COL_R|X&lt;/string&gt;
+  &lt;string&gt;DEF_COL_S|&lt;/string&gt;
+  &lt;string&gt;VAL_COL_S|Y&lt;/string&gt;
+  &lt;string&gt;DEF_COL_T|&lt;/string&gt;
+  &lt;string&gt;VAL_COL_T|Z&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="MetodoAggiornaCMD" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ITA_SP_UPDATE_DATIPROVVIGIONI</Value>
+    </Setting>
+    <Setting Name="MetodoVerifica" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT COUNT(*) FROM ITA_TAB_DEFPROV WHERE MACROARTICOLO ='{0}' AND {1} =CAST(REPLACE('{2}', ',', '.') AS DECIMAL(19,3))</Value>
+    </Setting>
+    <Setting Name="MetodoStoricoCMD" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM ITA_VISTA_DEFPROV ORDER BY MACROARTICOLO, DataModifica DESC</Value>
+    </Setting>
+    <Setting Name="FoglioListino" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">listino</Value>
+    </Setting>
+    <Setting Name="MetodoPrezziparticolari" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT T,NR, CODCLIFOR, DSCCONTO, CODART, DSCARTICOLO, UM, INIZIOVALIDITA, FINEVALIDITA, QTAMINIMA, PREZZO_MAGG, PREZZO_MAGGEURO, NRLISTINO, DSCLISTINO, 
+CODARTRIC, CODPADRE, DSCA, COD_IMBALLO, DSCIMBALLO, QTA_COLLI, PROGRESSIVO, IDRIGA, 
+('update GESTIONEPREZZIRIGHE set PREZZO_MAGG = #PREZZO_MAGG#, PREZZO_MAGGEURO = #PREZZO_MAGGEURO# where RIFPROGRESSIVO = ' + CAST(PROGRESSIVO AS VARCHAR) + ' and IDRIGA = ' + CAST(IDRIGA AS VARCHAR)) as SQLUPDATE , 
+('update GESTIONEPREZZI set INIZIOVALIDITA = @0, FINEVALIDITA =@1 where PROGRESSIVO = ' + CAST(PROGRESSIVO AS VARCHAR)) as SQLUPDATE_TESTATE 
+FROM dbo.VISTA_GESTIONEPREZZI</Value>
+    </Setting>
+    <Setting Name="pathServerApp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\temp</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

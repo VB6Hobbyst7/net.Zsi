@@ -1,0 +1,4 @@
+﻿KNOSAPI://OPENTECEUROLABMAIL/?baseurl=http%3A%2F%2FSERVERKNOS%3A8601&id=479065&idcert=479064
+
+C:\Users\adeangelo.ITALCOM\Google Drive\Lavoro\SignFileRTFPDF\SignFileRTFPDF\WindowsFormsApplication1\test.knos-fr
+

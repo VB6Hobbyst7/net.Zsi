@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KnosEnvelope knosBaseUrl="http://serverknos:8601" knosVersion="7.1.2" envelopeVersion="1.0" contains="PDL">
+  <PDL IdObject="479081" IdObjectCertificato="479082" NotificaCapocommessa="false" />
+</KnosEnvelope>

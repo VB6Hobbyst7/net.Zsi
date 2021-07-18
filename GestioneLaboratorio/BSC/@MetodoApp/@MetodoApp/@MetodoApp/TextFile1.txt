@@ -1,0 +1,25 @@
+﻿Una rivoluzione sta dentro a Metodo Evolus 8.0. L’intero gestionale è stato “censito” ed ogni sua parte è richiamabile mediante un indirizzo. 
+@Metodo è la nuova tecnologia che permette di invocare qualsiasi parte del gestionale mediante una semplice stringa.
+
+L’indirizzo di Metodo Evolus ha la sintassi “metodo://…” ed è invocabile da qualsiasi punto del sistema operativo:
+
+All’interno di Metodo Evolus: Ovunque all'interno del gestionale è possibile utilizzare un indirizzo per richiamare un'altra parte del gestionale. Ad esempio:
+Il sistema più diretto è quello di scrivere qualcosa direttamente nella barra degli indirizzi di MetodoEvolus 
+Posso creare uno Smart Tag utilizzando un indirizzo metodo://…. Provate ad esempio ad aprire l'Anagrafica Clienti o l'Anagrafica Articoli e passare il mouse sopra il campo codice. Vedrete apparire uno SmartTag   selezionando il quale si aprirà una tendina contenente una serie di azioni.
+Da una pagina web: in una pagina web posso avere un hyperlink con referenza metodo://…. Richiamando tale pagina all'interno del browser di MetodoEvolus si potrà navigare all'interno del gestionale.
+Alcuni esempi:
+Richiama la Situazione Magazzino utilizzando l'indirizzo "metodo://MENU/VisioniMag_1/"
+Richiama la Stampa del Piano dei Conti utilizzando l'indirizzo "metodo://MENU/Stampe_2/"
+Richiama la Console di Controllo della Situazione Contabile utilizzando l'indirizzo "metodo://AIOT/CTRLSitCont/"
+
+Gli indirizzi di @Metodo accettano parametri e quindi possono richiamare parti del gestionale inizializzandone i contenuti. Alcuni esempi:
+Richiama l'Anagrafica dell'Articolo A1-PF utilizzando l'indirizzo "metodo://MENU/AnagraficheMag_1/@codice=A1-PF"
+Manda al record successivo cliente utilizzando l'indirizzo "metodo://MENU/AnagraficheMag_1/@codice=&azionemetodo=4"
+Manda al record precedente cliente utilizzando l'indirizzo "metodo://MENU/Anagr_1/@codice=&azionemetodo=4"
+Manda al record successivo cliente utilizzando l'indirizzo "metodo://MENU/Anagr_1/@codice=&azionemetodo=3"
+Stampa cliente utilizzando l'indirizzo "metodo://MENU/Anagr_1/@codice=&azionemetodo=8"
+Salva cliente utilizzando l'indirizzo "metodo://MENU/Anagr_1/@codice=&azionemetodo=1"
+Richiama documento ordine utilizzando l'indirizzo "metodo://MENU/GestioneDoc_1/@Progressivo=657"
+Richiama l'Anagrafica del Cliente C 1 con utente trm1 e password terminale criptati utilizzando l'indirizzo " metodo://MENU/Anagr_1/@CodConto=C1&TOKEN=eGQlMkZZaGhMZ1YxcTVHdEhUR0RnR2FUZklNckdrRzR2cVdGOHpxSmpVZzNGT0QlMkJCcm5RRW1JQ2hnR1ZaJTJCbXhvS3IlMkYxdkk1cWF0aUdsN0RDd3VrWXRCOGVmSCUyQkhxVzdlQg2"
+Da un altro software: utilizzando le API che fanno parte dell'SDK di @metodo.
+@Metodo permette quindi di richiamare parti di Metodo Evolus da qualsiasi fonte. Questa tecnologia, unita agli Smart Tag, permette di creare percorsi di navigazione e processi che sconfinano dal limite del gestionale, permettendo l’integrazione di prodotti di terze parti o la personalizzazione del metodo di lavoro dell’utente.

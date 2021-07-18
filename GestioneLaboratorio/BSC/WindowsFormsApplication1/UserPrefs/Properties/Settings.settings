@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="UserPrefs.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="prefs_files_bscexec" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Some\\Folder\\Location\\Somefilename.txt</Value>
+    </Setting>
+    <Setting Name="pec_color" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Red</Value>
+    </Setting>
+    <Setting Name="default_plot_font" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Microsoft Sans Serif, 7.8pt</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

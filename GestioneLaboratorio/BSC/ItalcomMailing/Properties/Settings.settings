@@ -1,0 +1,218 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ToDoNotificheBSC.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MetodoConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=srv2k8;Initial Catalog=ZSI;Persist Security Info=True;User ID=sa;Password=sash17ne&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=srv2k8;Initial Catalog=ZSI;Persist Security Info=True;User ID=sa;Password=sash17ne</Value>
+    </Setting>
+    <Setting Name="MetodoCommand" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM VISTA_NOTIFICHECLIENTICONTATTI</Value>
+    </Setting>
+    <Setting Name="CdoConfig" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;SMTPServerName=smtp.gmail.com&lt;/string&gt;
+  &lt;string&gt;SMTPAUTHPassword=serverBI2017&lt;/string&gt;
+  &lt;string&gt;SMTPAUTHUser=knosmail@gmail.com&lt;/string&gt;
+  &lt;string&gt;SMTPAUTHUserEmail=knosmail@gmail.com&lt;/string&gt;
+  &lt;string&gt;SMTPPort=465&lt;/string&gt;
+  &lt;string&gt;SMTPUseSSL=1&lt;/string&gt;
+  &lt;string&gt;SMTPAlwaysSendAs=&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="UseCdo" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="sendMailPopUp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">true</Value>
+    </Setting>
+    <Setting Name="sendMailSchede" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;html&gt;
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;p&gt;
+            &lt;br /&gt;
+            Gent.mo Cliente,&lt;br /&gt;
+            in allegato l'aggiornamento di:&lt;br /&gt;
+            &lt;b&gt;{0}&lt;/b&gt;&lt;br /&gt;
+            &lt;b&gt;{1}&lt;/b&gt;&lt;br /&gt;
+            {2}&lt;br /&gt;&lt;br /&gt;
+            Si prega di non rispondere a questo indirizzo email.&lt;br /&gt;
+            &lt;br /&gt;
+            Dear Customer,&lt;br /&gt;
+            please find the attached revised document:&lt;br /&gt;
+            &lt;b&gt;{0}&lt;/b&gt;&lt;br /&gt;
+            &lt;b&gt;{1}&lt;/b&gt;&lt;br /&gt;
+            {2}&lt;br /&gt;&lt;br /&gt;
+            Please do not reply to this email address.&lt;br /&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;hr /&gt;
+        &lt;p&gt;
+            &lt;span&gt;&lt;b&gt;ZSCHIMMER &amp; SCHWARZ ITALIANA S.p.A.&lt;/b&gt;&lt;/span&gt;
+        &lt;br /&gt;
+        Via A. Ariotto 1/C&lt;br /&gt;
+        I - 13038 Tricerro, Italia&lt;br /&gt;
+        &lt;br /&gt;
+        Tel: +39 0161 808111&lt;br /&gt;
+        Fax: +39 0161 807335&lt;br /&gt;
+        Ufficio Commerciale/Sales Office:&lt;br /&gt;
+        Fax: +39 0161 801002&lt;br /&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</Value>
+    </Setting>
+    <Setting Name="sendMailEmbeddedImagesPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EmailImages</Value>
+    </Setting>
+    <Setting Name="KnoS_IdObject" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="KnoS_User" Type="System.String" Scope="User">
+      <Value Profile="(Default)">administrator</Value>
+    </Setting>
+    <Setting Name="KnoS_PWD" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="sendMailComunicazioni" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;html&gt;
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;p&gt;
+            &lt;br /&gt;
+            Gent.mo Cliente,&lt;br /&gt;
+            Vi preghiamo di prendere visione del file allegato&lt;br /&gt;
+
+	    Non rispondere a questo indirizzo mail&lt;br /&gt;
+            &lt;br /&gt;
+            Dear Customer,&lt;br /&gt;
+            please find the attached document:&lt;br /&gt;
+
+            Please do not reply to this email address.&lt;br /&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;hr /&gt;
+        &lt;p&gt;
+            &lt;span&gt;&lt;b&gt;ZSCHIMMER &amp;amp; SCHWARZ ITALIANA S.p.A.&lt;/b&gt;&lt;/span&gt;
+        &lt;br /&gt;
+        Via A. Ariotto 1/C&lt;br /&gt;
+        I - 13038 Tricerro, Italia&lt;br /&gt;
+        &lt;br /&gt;
+        Tel: +39 0161 808111&lt;br /&gt;
+        Fax: +39 0161 807335&lt;br /&gt;
+        Ufficio Commerciale/Sales Office:&lt;br /&gt;
+        Fax: +39 0161 801002&lt;br /&gt;
+&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</Value>
+    </Setting>
+    <Setting Name="PathPDF" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">W:\</Value>
+    </Setting>
+    <Setting Name="KnoS_URL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://zsi-websrv:81</Value>
+    </Setting>
+    <Setting Name="sendMailSchedeTecnicheSubject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Invio SCHEDE TECNICHE/MSDS - Cliente/Customer: {0}</Value>
+    </Setting>
+    <Setting Name="sendMailBollettiniSubject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Invio BOLLETTINI - Cliente/Customer {0}</Value>
+    </Setting>
+    <Setting Name="sendMailBCC" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">knosmail@gmail.com;m.michieletti@zschimmer-schwarz.com;msds.zsi@zschimmer-schwarz.com;</Value>
+    </Setting>
+    <Setting Name="DataAggiornamento" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2015-05-01</Value>
+    </Setting>
+    <Setting Name="SqlUpdateBSC" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EXECUTE dbo.ITA_SP_UPDATE_REGISTRONOTIFICHEBSC </Value>
+    </Setting>
+    <Setting Name="KnoS_IdActionUpdateSchede" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">5018</Value>
+    </Setting>
+    <Setting Name="KnoS_IdActionUpdateSchedeRedazione" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">5016</Value>
+    </Setting>
+    <Setting Name="PathPDF_H" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">H:\LETTERATURE PRODOTTI FINITI\SCHEDE DI SICUREZZA</Value>
+    </Setting>
+    <Setting Name="sendMailBCCSimulazione" Type="System.String" Scope="User">
+      <Value Profile="(Default)">knosmail@gmail.com;m.michieletti@zschimmer-schwarz.com</Value>
+    </Setting>
+    <Setting Name="PathCOA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\_SVILUPPO\ZSI\</Value>
+    </Setting>
+    <Setting Name="sendMailCOASubject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Invio COA - Cliente/Customer: {0}</Value>
+    </Setting>
+    <Setting Name="DataInvioSchede" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2015-01-01</Value>
+    </Setting>
+    <Setting Name="sendMailCOA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;html&gt;
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;p&gt;
+            &lt;br /&gt;
+            Gent.mo Cliente,&lt;br /&gt;
+            in allegato il certificato di analisi di:&lt;br /&gt;
+            {0}&lt;br /&gt;
+            Si prega di non rispondere a questo indirizzo email.&lt;br /&gt;
+            &lt;hr /&gt;
+            Dear Customer,&lt;br /&gt;
+            please find the attached revised document:&lt;br /&gt;
+            {0}&lt;br /&gt;
+            Please do not reply to this email address.&lt;br /&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;hr /&gt;
+        &lt;p&gt;
+            &lt;span&gt;&lt;b&gt;ZSCHIMMER &amp; SCHWARZ ITALIANA S.p.A.&lt;/b&gt;&lt;/span&gt;
+        &lt;br /&gt;
+        Via A. Ariotto 1/C&lt;br /&gt;
+        I - 13038 Tricerro, Italia&lt;br /&gt;
+        &lt;br /&gt;
+        Tel: +39 0161 808111&lt;br /&gt;
+        Fax: +39 0161 807335&lt;br /&gt;
+        Ufficio Commerciale/Sales Office:&lt;br /&gt;
+        Fax: +39 0161 801002&lt;br /&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</Value>
+    </Setting>
+    <Setting Name="MetodoCommandAllegati" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM ZS_VISTA_ALLEGATISCHEDESICUREZZA</Value>
+    </Setting>
+    <Setting Name="UseVbs" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="sendMailComunicazioniVbsLotus" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">"Gent.mo Cliente," &amp; vbcrlf &amp; "Vi preghiamo di prendere visione del file allegato" &amp; vbcrlf &amp; "{0}" &amp; vbcrlf &amp; "Si prega di non rispondere a questo indirizzo email." &amp; vbcrlf &amp; "Dear Customer," &amp; vbcrlf &amp; "please find the attached document:" &amp; vbcrlf &amp; "{0}" &amp; vbcrlf &amp; "Please do not reply to this email address." &amp; vbcrlf &amp; "ZSCHIMMER &amp; SCHWARZ" &amp; vbcrlf &amp; "Italiana S.p.A." &amp; vbcrlf &amp; "Via A. Ariotto 1/C" &amp; vbcrlf &amp; "I - 13038 Tricerro, Italia" &amp; vbcrlf &amp; "Tel: +39 0161 808111" &amp; vbcrlf &amp; "Fax: +39 0161 807335" &amp; vbcrlf &amp; "Ufficio Commerciale:" &amp; vbcrlf &amp; "Fax: +39 0161 801002" </Value>
+    </Setting>
+    <Setting Name="MetodoCommandDocs" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;ORDINI CISTERNA|SELECT * FROM VISTA_KNOS_INVIOCONFERMAORDINIMAIL WHERE CISTERNA = 1|1&lt;/string&gt;
+  &lt;string&gt;ORDINI IMBALLATO|SELECT * FROM VISTA_KNOS_INVIOCONFERMAORDINIMAIL WHERE CISTERNA = 0|1&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="sendMailDocMetodo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">"Gent.mo Cliente," &amp; vbcrlf &amp; "Vi preghiamo di prendere visione del file allegato" &amp; vbcrlf &amp; "{0}" &amp; vbcrlf &amp; "Si prega di non rispondere a questo indirizzo email." &amp; vbcrlf &amp; "Dear Customer," &amp; vbcrlf &amp; "please find the attached document:" &amp; vbcrlf &amp; "{0}" &amp; vbcrlf &amp; "Please do not reply to this email address." &amp; vbcrlf &amp; "ZSCHIMMER &amp; SCHWARZ" &amp; vbcrlf &amp; "Italiana S.p.A." &amp; vbcrlf &amp; "Via A. Ariotto 1/C" &amp; vbcrlf &amp; "I - 13038 Tricerro, Italia" &amp; vbcrlf &amp; "Tel: +39 0161 808111" &amp; vbcrlf &amp; "Fax: +39 0161 807335" &amp; vbcrlf &amp; "Ufficio Commerciale:" &amp; vbcrlf &amp; "Fax: +39 0161 801002" </Value>
+    </Setting>
+    <Setting Name="sendMailDocSubject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Invio Doc {0} {1}</Value>
+    </Setting>
+    <Setting Name="pathServerApp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">I:\Italcom\ItalcomMailing</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

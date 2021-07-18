@@ -1,0 +1,1 @@
+da sqldbx devi lanciare EXEC BRIO_CALCOLAPREZZOMPARTICOLI_2

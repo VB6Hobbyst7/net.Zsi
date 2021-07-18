@@ -1,0 +1,130 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SignRTFPDF.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="firmatecnico" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;4096&lt;/string&gt;
+  &lt;string&gt;150&lt;/string&gt;
+  &lt;string&gt;30&lt;/string&gt;
+  &lt;string&gt;2133&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="firmaresptecnico" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;4096&lt;/string&gt;
+  &lt;string&gt;150&lt;/string&gt;
+  &lt;string&gt;30&lt;/string&gt;
+  &lt;string&gt;2759&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="firmacapocommessa" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;4096&lt;/string&gt;
+  &lt;string&gt;150&lt;/string&gt;
+  &lt;string&gt;30&lt;/string&gt;
+  &lt;string&gt;3151&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="startXML" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="KnoS_IdStatoIniziale" Type="System.String" Scope="User">
+      <Value Profile="(Default)">159</Value>
+    </Setting>
+    <Setting Name="KnoS_IdStato1F" Type="System.String" Scope="User">
+      <Value Profile="(Default)">160</Value>
+    </Setting>
+    <Setting Name="KnoS_IdStato2F" Type="System.String" Scope="User">
+      <Value Profile="(Default)">161</Value>
+    </Setting>
+    <Setting Name="KnoS_IdStatoPDLFirmato" Type="System.String" Scope="User">
+      <Value Profile="(Default)">147</Value>
+    </Setting>
+    <Setting Name="KnoS_IdAction1F" Type="System.String" Scope="User">
+      <Value Profile="(Default)">237</Value>
+    </Setting>
+    <Setting Name="KnoS_IdAction2F" Type="System.String" Scope="User">
+      <Value Profile="(Default)">238</Value>
+    </Setting>
+    <Setting Name="KnoS_IdActionPDFFirmato" Type="System.String" Scope="User">
+      <Value Profile="(Default)">208</Value>
+    </Setting>
+    <Setting Name="KnoS_AttrNameData1F" Type="System.String" Scope="User">
+      <Value Profile="(Default)">datetime_08</Value>
+    </Setting>
+    <Setting Name="KnoS_AttrNameData2F" Type="System.String" Scope="User">
+      <Value Profile="(Default)">datetime_09</Value>
+    </Setting>
+    <Setting Name="KnoS_AttrNameUtenteTecnico" Type="System.String" Scope="User">
+      <Value Profile="(Default)">varchar_51</Value>
+    </Setting>
+    <Setting Name="KnoS_AttrNameUtenteResponsabileTecnico" Type="System.String" Scope="User">
+      <Value Profile="(Default)">varchar_52</Value>
+    </Setting>
+    <Setting Name="KnoS_AttrNameUtenteCapocCommessa" Type="System.String" Scope="User">
+      <Value Profile="(Default)">varchar_53</Value>
+    </Setting>
+    <Setting Name="KnoS_AttrNameDataFirmaPDL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">datetime_02</Value>
+    </Setting>
+    <Setting Name="KnoS_IdStatoPDLDaFirmare" Type="System.String" Scope="User">
+      <Value Profile="(Default)">160</Value>
+    </Setting>
+    <Setting Name="sendMailPopUp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">true</Value>
+    </Setting>
+    <Setting Name="KnoS_IdActionPDLDaFirmare" Type="System.String" Scope="User">
+      <Value Profile="(Default)">241</Value>
+    </Setting>
+    <Setting Name="sendMailResponsabileMessage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Avviso al tecnico responsabile del lavoro nr {0}
+I certificati risultano terminati dai tecnici dei quali lei risulta responsabile, viene richiesta la sua firma per procedere con il processo di richiesta firma digitale al tecnico capo commessa 
+Prema questo link per procedere {1}
+</Value>
+    </Setting>
+    <Setting Name="sendMailCapocommessaMessage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Avviso al tecnico capo commessa del lavoro nr {0}
+I certificati risultano terminati dai tecnici e firmati dai responsabili, viene richiesta la sua firma digitale per terminare il processo ed inviare il certificato al cliente finale.
+Prema questo link per procedere {1}
+Grazie
+</Value>
+    </Setting>
+    <Setting Name="KnoS_AttrNameUtenteResponsabileTecnicoSost" Type="System.String" Scope="User">
+      <Value Profile="(Default)">varchar_54</Value>
+    </Setting>
+    <Setting Name="KnoS_AttrNameUtenteCapocCommessaSost" Type="System.String" Scope="User">
+      <Value Profile="(Default)">varchar_55</Value>
+    </Setting>
+    <Setting Name="KnoS_SearchExpressionResponsabili" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="KnoS_SearchExpressionCapiCommessa" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="KnoS_URL" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="KnoS_IdObject" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="KnoS_IdClassSostituti" Type="System.String" Scope="User">
+      <Value Profile="(Default)">133</Value>
+    </Setting>
+    <Setting Name="KnoS_IdViewSostituti" Type="System.String" Scope="User">
+      <Value Profile="(Default)">126</Value>
+    </Setting>
+    <Setting Name="KnoS_IdActionPDLFirmatoCERT" Type="System.String" Scope="User">
+      <Value Profile="(Default)">245</Value>
+    </Setting>
+    <Setting Name="useMapiMail" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="KnoS_IdClassSurvey" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">135</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
